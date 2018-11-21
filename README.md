@@ -1,2 +1,0 @@
-# ReactQuizComponent
-Created with CodeSandbox

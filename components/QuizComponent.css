@@ -1,0 +1,74 @@
+.quizPanel {
+  color: #fff;
+  padding: 10px;
+  display: block;
+  max-width: 460px;
+  margin: 50px auto;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #252525;
+  position: relative;
+  height: 300px;
+}
+
+.quizPanel .counter {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.quizPanel .question {
+  opacity: 0;
+  top: 50px;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: auto;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.quizPanel .question.visible {
+  opacity: 1;
+  z-index: 1;
+}
+
+.quizPanel .question > div {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.quizPanel button {
+  width: 100%;
+  outline: none;
+  margin: 8px 0;
+  padding: 10px;
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  border: 1px solid #a511c0;
+  text-shadow: 0px 1px 0px #9b14b3;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #e184f3;
+  box-shadow: inset 0px 1px 0px 0px #e184f3;
+  background: -webkit-linear-gradient(top, #c123de 5%, #a20dbd 100%);
+  background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+}
+
+.quizPanel button:hover {
+  background: -webkit-linear-gradient(top, #a20dbd 5%, #c123de 100%);
+  background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+}
+
+.quiz-phase.hidden {
+  display: none;
+}
+
+.quiz-phase.visible {
+  display: block;
+}
